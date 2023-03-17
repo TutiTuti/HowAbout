@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.findPw {
+    padding: 1em 0;
+    width: 30em;
+    margin: 0 auto;
+    padding-top: 10em;
+    text-align: center;
+}
+
+#findPw-info__id {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+
+#findPw-info__id > input {
+    width: 15.8em;
+    padding: 0.5em 0.75em;
+    padding-left: 1em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+#findPw-info__email {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+#findPw-info__email > input {
+    width: 15.8em;
+    padding: 0.5em 0.75em;
+    padding-left: 1em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+#yourPwContainer {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    display: none;
+}
+
+#yourPwContainer > input {
+    width: 15.8em;
+    padding: 0.5em 0.75em;
+    padding-left: 1em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+#findPw-info__birth {
+    width: 15em;
+    margin: 0 auto;
+    display: flex;
+}
+
+#findPw-info__birth #birth-year {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    margin-right: 0.25em;
+}
+
+#findPw-info__birth #birth-month {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    margin-right: 0.25em;
+}
+
+#findPw-info__birth #birth-day {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+}
+
+#findPw__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0.5em auto;
+}
+
+#findPw__button button {
+    width: 18em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+}
+
+#findPw__button a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+
+    /*현재 위치에서 상대적 이동 */
+    position: relative;
+    top: 9px;
+}
+
+#findPw__button button:hover {
+    background: #ff5757;
+    color: white;
+}
+.findPw-back a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+
+  /*현재 위치에서 상대적 이동 */
+  position: relative;
+  top: -2px;
+}

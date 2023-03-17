@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <mapper namespace="com.howabout.there.popularcourse.dao.IPopularCouresDao">
+   
+   
+   <!-- 쿼리문 param 으로 합쳐보기 -->
+   <select id="setCourseCat" resultType="com.howabout.there.popularcourse.dto.PopularCourseDto">
+   	SELECT  
+		r_name, r_phone, r_do, r_si, r_gu, r_dong, r_cat, r_url, r_id, r_lon, r_lat,r_image_url, 
+		c_name, c_phone, c_do, c_si, c_gu, c_dong, c_cat, c_url,c_id, c_lon, c_lat ,c_image_url,
+		COUNT(rest_name) AS NUM,
+		RANK() OVER(ORDER BY COUNT(rest_name) DESC) AS GRADE	
+	FROM course 
+		JOIN cafe ON (cafe_id = c_id) 
+		JOIN restaurant ON (rest_id = r_id) 
+	WHERE  gender <![CDATA[ >= ]]> 0 AND rest_id = r_id AND cafe_id = c_id  ${gender}  ${age}  ${do}  ${si}
+	GROUP BY rest_name, cafe_name
+	LIMIT 5;
+   </select>
+   
+   <select id="setFlag" resultType="Integer">
+   	SELECT flag
+   	FROM course
+   	WHERE writer = #{writer} AND cafe_id = #{c_id} AND rest_id = #{r_id};
+   
+   </select>
+   
+   
+    <!-- Do List 가져오기 -->
+   <select id="setDoList" resultType="String">
+   	SELECT DISTINCT r_do	
+	FROM restaurant 
+   </select>
+   
+   <!-- Si List 가져오기 -->
+   <select id="setSiList" resultType="String">
+   	SELECT DISTINCT r_si	
+	FROM restaurant 
+	WHERE ${location_do}
+   </select>
+    	
+    </mapper>
+    
+    

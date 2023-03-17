@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Find PW</title>
+  <link rel="stylesheet" href="/css/findPw.css"/>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+<div class="test1_0" style="position: absolute; z-index: -1;">
+
+  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
+                 background="transparent"
+                 speed="1"
+                 style="border-bottom: 2px solid #eee; width: 100%; height: 100%;"
+                 loop
+                 autoplay>
+  </lottie-player>
+</div>
+<div class="findPw">
+  <div class="findPw-container">
+    <div id="findPw-info__id">
+      <input type="text" placeholder="아이디를 입력하세요." id="findPw-id"/>
+    </div>
+    <div id="findPw-info__email">
+      <input type="text" placeholder="이메일을 입력하세요." id="findPw-email"/>
+    </div>
+    <div id="yourPwContainer">
+      <input type="text" id="yourNewPw" placeholder="비밀번호 재설정"/>
+    </div>
+    <div id="findPw__button">
+      <button type="button">비밀번호 찾기</button>
+      <a href="/login/signIn" style="color: white">돌아가기</a>
+    </div>
+  </div>
+</div>
+<script src="/js/findpw.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>

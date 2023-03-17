@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ingi Course</title>
+	<link rel="stylesheet" href="/css/ingi.css" />
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+
+<body>
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5b1cf534f0124bbf03d02def34505c63&libraries=services,clusterer,drawing"></script>
+  <div class="test1_0" style="position: absolute; z-index: -1;">
+
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
+                   background="transparent"
+                   speed="1"
+                   style="border-bottom: 2px solid #eee; width: 100%; height: 100%;"
+                   loop
+                   autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- header -->
+	<header class="ingi__header">
+		<div>
+			<a href="/mainPage">
+				<img src="../images/logo_white.png" alt="logo" id="jeogi-logo__img" width="210px" />
+			</a>
+		</div>
+		<nav class="ingi__nav__list">
+			<ul>
+				<li>
+					<a href="/popularCourse">인기코스</a>
+				</li>
+				<li>
+					<a href="/findCourse/webCourse">코스찾기</a>
+				</li>
+        <li id="myFavoriteCourseLink">
+          <a href="/myCourse/myCourseSite">내코스</a>
+        </li>
+        <li id="myInfoLink">
+          <a href="/myPage/myInfo/webData" style="cursor:pointer;">마이페이지</a>
+        </li>
+				<li>
+					<a id="loginLogout" style="cursor: pointer">로그인</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- header -->
+
+	<!-- main-content -->
+	<main>
+		<article class="ingi__container">
+			<!-- user Favorite Course place -->
+			<div id="ingizzang">
+				<div class="ingi__choice">
+					<select name="ingi-gender" id="ingi-gender" class="ingi-box">
+						<option disabled selected>성별</option>
+						<option>전체</option>
+						<option>남성</option>
+						<option>여성</option>
+					</select>
+					<select name="ingi-age" id="ingi-age" class="ingi-box">
+						<option disabled selected>나이</option>
+						<option>전체</option>
+						<option>10대</option>
+						<option>20대</option>
+						<option>30대</option>
+						<option>40대</option>
+						<option>50대</option>
+					</select>
+					<select name="ingi-do" id="ingi-do" class="ingi-box">
+						<option selected>전체</option>
+					</select>
+					<select name="ingi-si" id="ingi-si" class="ingi-box">
+						<option selected>전체</option>
+					</select>
+					<button type="button" id="ingi-search">검색</button>
+				</div>
+				<div class="ingi-list__container">
+					<!-- contents ( 10개 ) -->
+					<section>
+						<div id="items">
+							<!-- 아이템들 들어갈 거임 -->
+						</div>
+					</section>
+					<!-- contents -->
+				</div>
+			</div>
+			<!-- user Favorite Course place -->
+
+			<!-- kakao map api -->
+			<div class="ingi__map">
+				<div id="map"></div>
+			</div>
+			<!-- kakao map api -->
+		</article>
+	</main>
+	<!-- main-content -->
+
+	<!-- kakao map api - javascript -->
+	<script src="/js/ingiMap.js"></script>
+	<script src="/js/ingiCourse.js"></script>
+	<!-- kakao map api - javascript -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

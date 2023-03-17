@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="/css/login.css" />
+    <!-- <script src="jquery-1.7.2.min.js"></script> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  </head>
+  <body>
+    <div class="loginbox">
+      <div align="center">
+        <img
+          class="logo"
+          src="../images/logo.png"
+          width="200"
+          height="50"
+          alt="logo"
+        />
+      </div>
+      <form action="#" id="form">
+        <input type="text" id="loginid" placeholder="ID" />
+        <input type="password" id="loginpw" placeholder="PASSWORD" />
+        <ul>
+          <li><a href="#">KakaoTest</a></li>
+          <li><a href="#">비밀번호찾기</a></li>
+        </ul>
+        <div align="center">
+          <button onclick="cafeUp()" >두정고등학교주변카페검색</button>
+          <button onclick="courseUp()" >마이코스업데이트</button>
+          <button onclick="mapTest()" >Map테스트버튼</button>
+          <button onclick="getmap()" >Map 받기 테스트 </button>
+          <script src="/js/kakaotest.js">
+            console.log(document);
+          </script>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

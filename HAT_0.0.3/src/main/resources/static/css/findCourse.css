@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* transition: 0.7s; */
+    letter-spacing: 1px;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* header */
+.find-course__header {
+    padding: 1em 60px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    align-items: center;
+}
+
+.find-course__header .find-course__nav__list ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.find-course__header .find-course__nav__list {
+}
+
+.find-course__header .find-course__nav__list ul li a {
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* header */
+
+/* main content */
+.find-course__container {
+    display: flex;
+    /* width: 70em; */
+    height: 37em;
+    max-width: 95%;
+    margin: 0 auto;
+    /* box-shadow: 0 1px 5px #ff5757; */
+    border: 2px solid #ff5757;
+    border-radius: 7px;
+    padding: 1em;
+}
+
+.find-course__container .find-course__map {
+    flex: 3;
+}
+
+.find-course__container .find-course__map #map {
+    /* width: 45em; */
+    height: 35em;
+    border: 10px solid #eeea;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.find-course-list__container {
+    /* width: 25em; */
+    flex: 1;
+    padding-right: 0.75em;
+    text-align: center;
+}
+
+.choice-container {
+    flex: 1;
+    padding-right: 0.5em;
+    padding-left: 0.75em;
+    border-left: 2px solid #eee;
+}
+
+.choice-list-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    height: 100%;
+}
+
+.choice-list-container > div {
+    flex: 1;
+    border-bottom: 2px solid #eee;
+}
+
+.choice-list-container > div:last-child {
+    display: flex;
+    flex: 0;
+    border-bottom: none;
+}
+
+.choice-list-container > div:last-child button {
+    flex: 10;
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 0.5em 0.25em;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#myFavoriteCourseLink {
+    display:none;
+}
+
+#myInfoLink {
+    display: none;
+}
+
+.choice-list-container > div:last-child img {
+    cursor: pointer;
+    width: 2.5em;
+    padding: 0.4em;
+}
+
+.choice-list-container > div:last-child button:hover {
+    background: #FF5757;
+    color: white;
+}
+
+.find-course__search {
+    position: relative;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    padding: 15px;
+    height: 2.25em;
+    top: 0px;
+    border-right: 1px solid #eee;
+    align-items: center;
+}
+
+.material-symbols-outlined:nth-of-type(2) {
+    position: absolute;
+    padding: 15px;
+    height: 2.25em;
+    top: 0px;
+    right: 0px;
+    border-right: 0;
+    border-left: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:nth-of-type(2):hover {
+    background: #ff5757;
+}
+
+.find-course-list__container .find-course__search #find-course__searchbar {
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 3.5em;
+    outline: none;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+/* 레스토랑 버튼 */
+.res-container {
+    display: flex;
+    margin-bottom: 0.2em;
+}
+
+.res-container button {
+    flex: 1;
+    padding: 0.5em 0;
+    outline: none;
+    font-weight: bold;
+}
+
+.res-container button:nth-of-type(1) {
+    border: 1px solid white;
+    border-radius: 12px 0 0 12px;
+    background: #ff5757;
+    color: white;
+}
+
+.res-button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-left: 2px solid #eee;
+}
+
+.res-button:nth-last-child(1) {
+    border: 1px solid white;
+    border-left: 2px solid #eee;
+    border-radius: 0 12px 12px 0;
+}
+
+.res-button:hover {
+    background: #ff5757;
+    color: white;
+}
+
+/* 레스토랑 버튼 */
+
+/* 카페 버튼 */
+.cafe-container {
+    display: flex;
+    margin-bottom: 0.2em;
+}
+
+.cafe-container button {
+    flex: 1;
+    padding: 0.5em 0;
+    outline: none;
+    font-weight: bold;
+}
+
+.cafe-container button:nth-of-type(1) {
+    border: 1px solid white;
+    border-radius: 12px 0 0 12px;
+    background: #ff5757;
+    color: white;
+}
+
+.cafe-button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-left: 2px solid #eee;
+}
+
+.cafe-button:nth-last-child(1) {
+    border: 1px solid white;
+    border-left: 2px solid #eee;
+    border-radius: 0 12px 12px 0;
+}
+
+.cafe-button:hover {
+    background: #ff5757;
+    color: white;
+}
+
+/* 카페 버튼 */
+
+.items {
+    max-height: 31em;
+    padding-top: 0.5em;
+    overflow-y: scroll;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.items::-webkit-scrollbar {
+    width: 0px;
+}
+
+.radius {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.radius > button {
+    flex: 1;
+    border: 1px solid #eee;
+    margin-right: 5px;
+    padding: 0.25em 0.5em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.radius > button:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.radius > button:hover {
+    background: #ff5757;
+    color: white;
+}
+
+.active-color {
+    background: #ff5757;
+    color: white;
+}
+
+.right-box3 {
+    margin-top: 0.5em;
+    height: 26em;
+    overflow-y: scroll;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 0.5em 0;
+}
+
+.right-box3::-webkit-scrollbar {
+    width: 0px;
+}
+
+.right-box3 div {
+    height: 100%;
+}
+
+#placesList > li {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 0.25em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#placesList > li:hover {
+    transition: 0.5s all ease;
+    background: #eee;
+}
+
+.info > h5 {
+    font-size: 1.25em;
+    border: 1px solid #fff;
+    background: #ff5757;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+}
+
+.tel {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+#pagination > a {
+    margin: 0 0.25em;
+    font-size: 1.12em;
+    color: black;
+    font-weight: bold;
+}
+
+#startChoice {
+    padding: 0.5em 0;
+}
+
+#resChoice {
+    padding: 0.5em 0;
+}
+
+#cafeChoice {
+    padding: 0.5em 0;
+}
+
+.find-course-list {
+    height: 100%;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.find-course-list:hover {
+    background: #eee;
+}
+
+.find-course-list__image {
+    width: 4.5em;
+    height: 4.5em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background: #ff5757;
+}
+
+.find-course-list__description {
+    flex-grow: 2;
+}
+
+.find-course-list__image {
+    display: flex;
+    width: 4.5em;
+    height: 4.5em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background: #ff5757;
+}
+
+.find-course-list__image img {
+    margin: auto;
+    width: 3.25em;
+    height: 1.25em;
+}
+
+#placesList {
+    height: 100%;
+}
+
+.info-item-list {
+    border: 2px solid #eee;
+    background: #FF5757;
+    border-radius: 8px;
+}
+
+.info-item-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-item-list div span {
+    color: white;
+    font-weight: bold;
+}
+
+.custom_content {
+    height: 10em;
+    width: 15em;
+    border: 2px solid #ff5757;
+    border-radius: 7px;
+    padding: 0.25em 0.5em;
+    background: #eee;
+    transform: translateY(-75px);
+    text-align: center;
+    cursor: default;
+}
+
+.custom_content .place_name {
+    margin: 0 auto;
+    padding: 0.25em 0.5em;
+    border: 2px solid #eee;
+    border-radius: 7px;
+    background: #ff5757;
+}
+
+.custom_content .place_name span {
+    font-size: 0.95em;
+    color: white;
+    font-weight: bold;
+}
+
+.address_name {
+    white-space: normal;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 0.25em;
+    margin: 0 0.55em 0.25em;
+    border: 2px solid #eee;
+    border-radius: 7px;
+    background: #ff5757;
+    color: white;
+    /*opacity: 0;*/
+}
+
+/* 쓸모없는 기능 */
+/*.address_name:hover {*/
+/*  opacity: 99;*/
+/*}*/
+
+.address_name span {
+    width: 100%;
+    font-size: 0.65em;
+}
+
+.addDateListButton {
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 0.5em 0.25em;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addDateListButton:hover {
+    background: #FF5757;
+    color: white;
+}
+
+/* main content */
+
+@media (max-width: 1080px) {
+    .find-course__container {
+        width: 60em;
+        min-width: 32.25em;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .find-course-list__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .find-course__container .find-course__map #map {
+        width: 100%;
+        height: 30em;
+    }
+}

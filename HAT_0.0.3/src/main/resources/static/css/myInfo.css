@@ -1,0 +1,215 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* header start */
+.my-info__header {
+  padding: 1em 60px;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  align-items: center;
+}
+
+.my-info__header .my-info-nav__list {
+  /*display: none;*/
+}
+
+.my-info__header .my-info-nav__list ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.my-info__header .my-info-nav__list ul li a {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.my-info__header .my-info-nav__list ul li a:hover {
+  border-bottom: 2px solid #eee;
+}
+
+/* 화면너비 줄어들었을 때 메뉴가 dropdown으로 되는 용도로 사용  */
+.dropdown {
+  display: none;
+  line-height: 9px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dropdown__icon {
+  position: relative;
+  width: 1.5em;
+  height: 15px;
+}
+
+.dropdown__icon > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 30px;
+  background: white;
+}
+
+.dropdown__icon > span:nth-child(1) {
+  top: 0;
+}
+
+.dropdown__icon > span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown__icon > span:nth-child(3) {
+  bottom: 0;
+}
+
+.dropdown__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 4.85em;
+  right: 5em;
+  width: 7em;
+  height: 5em;
+  text-align: center;
+}
+
+.dropdown__content a {
+  display: block;
+  padding: 1em 0.5em;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.dropdown__content a:hover {
+  color: #ff5757;
+}
+/* 화면너비 줄어들었을 때 메뉴가 dropdown으로 되는 용도로 사용  */
+
+/* header end */
+
+/* content start */
+#pass_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: darkgray;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#pass_popup {
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  flex-direction: column;
+  width: 30em;
+  margin: 10em auto;
+  height: 15em;
+}
+
+#pass_popup > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15em;
+  margin: 3em auto;
+  text-align: center;
+}
+
+#pass_popup > div input {
+  margin-top: 1em;
+  width: 100%;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em 0.5em;
+}
+
+#pass_popup > div button {
+  margin-top: 0.5em;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+}
+
+.my-info__container {
+  width: 25em;
+  max-width: 95%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 1.5em auto;
+  padding: 2em;
+}
+
+.my-info__title {
+  margin-bottom: 1.25em;
+  color: #ff5757;
+}
+
+.my-info__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-info__data span {
+  margin: 0 0 0.25em 0.35em;
+  letter-spacing: 1px;
+}
+
+.my-info__container input {
+  padding: 0.45em 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  outline: none;
+  background: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#userGender {
+}
+
+.my-info__container input::placeholder {
+  color: black;
+}
+
+.my-info__change {
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+}
+
+.my-info__change button {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.45em 0.5em;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ff5757;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.my-info__change button:nth-of-type(2) {
+  margin-left: 1em;
+}
+/* content end */

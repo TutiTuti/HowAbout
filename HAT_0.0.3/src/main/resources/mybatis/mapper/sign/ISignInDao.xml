@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.howabout.there.sign.dao.ISignInDao">
+	<!-- u_id가 일치하는 user의 정보 가져오기 -->
+	<select id="userData"
+		resultType="com.howabout.there.sign.vo.UserVo"> 
+		SELECT *
+		FROM user
+		WHERE u_id = #{u_id} AND u_flag = "1"; </select>
+
+	
+	<!-- 내아이디 찾기 -->
+	<select id="findMyId" resultType="String">
+		SELECT u_id 
+		FROM user
+		WHERE u_email = #{u_email};
+	</select>
+	<!-- 비밀번호 찾기전 내정보 확인 -->
+	<select id="checkMyInfo" resultType="Integer" >
+		SELECT count(*)
+		FROM user
+		WHERE u_id = #{u_id} AND u_email = #{u_email} ;
+	</select>
+	<!-- 비밀번호 재설정 -->
+	<update id="setMyPw">
+		UPDATE user
+		SET u_pw=#{u_pw}
+		WHERE u_id = #{u_id};
+	</update>
+	
+	<!-- 이메일 인증코드 업데이트ㅓ-->
+	<insert id="setNewMailAuth">
+		INSERT emailauth
+		values (#{email}, #{auth}) 
+	</insert>
+	
+	<!-- 이메일 인증 값 비교-->
+	<select id="authCheck" resultType="Integer">
+		SELECT count(*)
+		FROM emailauth
+		WHERE email=#{email} AND authvalue=#{auth};
+	</select>
+	
+	<!-- 아이디 찾기 이메일로 유저 아이디 가지고 오기-->
+	<select id="getUserId" resultType="String">
+		SELECT u_id
+		FROM user
+		WHERE u_email = #{u_email};
+	</select>
+	
+	
+	
+	
+</mapper>

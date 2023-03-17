@@ -1,0 +1,140 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* header start */
+.my-info__header {
+  padding: 1em 60px;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  align-items: center;
+}
+
+.my-info__header .my-info-nav__list ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.my-info__header .my-info-nav__list {
+}
+
+.my-info__header .my-info-nav__list ul li a {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* header end */
+
+/* content start */
+.my-info-setting__container {
+  width: 25em;
+  max-width: 95%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.my-info-setting__title {
+  margin-bottom: 1.25em;
+  color: #ff5757;
+}
+
+.my-info-setting__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-info-setting__data span {
+  margin: 0 0 0.25em 0.35em;
+  letter-spacing: 1px;
+}
+
+.my-info-setting__container input {
+  padding: 0.45em 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.my-info-setting__container input:nth-of-type(2),
+.my-info-setting__container input:nth-of-type(3),
+.my-info-setting__container input:nth-of-type(4),
+.my-info-setting__container input:nth-of-type(5),
+.my-info-setting__container input:nth-of-type(6) {
+  background: #ededed;
+}
+
+.my-info-setting__container input::placeholder {
+  color: black;
+}
+
+.my-info-setting__change {
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+}
+
+.my-info-setting__change button {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.45em 0.5em;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ff5757;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.gender-box #gender-box__choice {
+  display: block;
+}
+
+.gender-box .gender-box__input {
+  padding: 0.45em 0.5em;
+  border: none;
+  outline: none;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.gender-box .gender-box__input input {
+  border: 1px solid black;
+  margin: 0;
+}
+
+.birth-box__container .info {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.birth-box__container .info .change-box {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f1f1f1;
+  font-size: 0.95rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  background: #eee;
+  border-radius: 5px;
+  margin-top: 0.25em;
+}
+
+.my-info-setting__change button:nth-of-type(2) {
+  margin-left: 1em;
+}
+/* content end */

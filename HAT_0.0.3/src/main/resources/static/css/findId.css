@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.findId {
+    padding: 1em 0;
+    width: 30em;
+    margin: 0 auto;
+    padding-top: 10em;
+    text-align: center;
+}
+
+#findId-info__email {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+
+#findId-info__email > input {
+    width: 15.8em;
+    padding: 0.5em 0.75em;
+    padding-left: 1em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+#yourIdContainer {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    display: none;
+}
+
+#yourIdContainer > input {
+    width: 15.8em;
+    padding: 0.5em 0.75em;
+    padding-left: 1em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+#findId-info__birth {
+    width: 15em;
+    margin: 0 auto;
+    display: flex;
+}
+
+#findId-info__birth #birth-year {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    margin-right: 0.25em;
+}
+
+#findId-info__birth #birth-month {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    margin-right: 0.25em;
+}
+
+#findId-info__birth #birth-day {
+    flex: 1;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+}
+
+#findId__button {
+    margin: 0.5em auto;
+}
+
+#findId__button button {
+    width: 18em;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+}
+
+#findId__button button:hover {
+    background: #ff5757;
+    color: white;
+}
+
+.findId-back a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+
+  /*현재 위치에서 상대적 이동 */
+  position: relative;
+  top: -2px;
+}

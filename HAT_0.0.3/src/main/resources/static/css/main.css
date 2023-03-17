@@ -1,0 +1,208 @@
+* {
+    /* list-style: none; */
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* header start */
+.main-header {
+    padding: 1em 60px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    align-items: center;
+}
+
+#myFavoriteCourseLink {
+    display: none;
+}
+
+#myInfoLink {
+    display: none;
+}
+
+/* 그냥 한 번 테스트 해봐떠 */
+/* .main-header div {
+  filter: drop-shadow(2px 4px 2px #eee);
+} */
+
+.main-header .main-nav__list {
+    /*display: none;*/
+}
+
+.main-header .main-nav__list ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-header .main-nav__list ul li a {
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.main-header .main-nav__list ul li a:hover {
+    border-bottom: 2px solid #eee;
+}
+
+/* 화면너비 줄어들었을 때 메뉴가 dropdown으로 되는 용도로 사용  */
+.dropdown {
+    display: none;
+    line-height: 9px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.dropdown__icon {
+    position: relative;
+    width: 1.5em;
+    height: 15px;
+}
+
+.dropdown__icon > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: white;
+}
+
+.dropdown__icon > span:nth-child(1) {
+    top: 0;
+}
+
+.dropdown__icon > span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown__icon > span:nth-child(3) {
+    bottom: 0;
+}
+
+.dropdown__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 4.85em;
+    right: 5em;
+    width: 7em;
+    height: 5em;
+    text-align: center;
+}
+
+.dropdown__content a {
+    display: block;
+    padding: 1em 0.5em;
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.dropdown__content a:hover {
+    color: #ff5757;
+}
+
+/* 화면너비 줄어들었을 때 메뉴가 dropdown으로 되는 용도로 사용  */
+
+/* header end */
+
+/* content start */
+#main-content-haha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 25em;
+}
+
+#jeogiLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30em;
+    margin-top: 1em;
+}
+
+#jeogiLinkContainer > div {
+    border: 2px solid #eee;
+    width: 10em;
+    border-radius: 18px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#jeogiLinkContainer > div span{
+    color: white;
+    font-weight: bold;
+}
+
+#main-content-haha:nth-of-type(1) {
+    flex: 1;
+}
+
+.test1_0 {
+    flex: 1;
+}
+
+.test1_1 {
+    flex: 1;
+    text-align: center;
+    line-height: 15em;
+    color: #ff5757;
+    border: 2px solid #eee;
+}
+
+.test1_2 {
+    flex: 1;
+    text-align: center;
+    line-height: 15em;
+    color: #ff5757;
+    cursor: pointer;
+    border: 2px solid #eee;
+}
+
+.test2_1 {
+    flex: 1;
+    color: #ff5757;
+    text-align: center;
+    line-height: 15em;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+/*.test2_2 {*/
+/*  flex: 1;*/
+/*  margin-top: 1em;*/
+/*  text-align: center;*/
+/*  line-height: 15em;*/
+/*  color: #ff5757;*/
+/*  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);*/
+/*  border: 2px solid #ff5757;*/
+/*}*/
+
+.test1_2:hover,
+.test2_1:hover {
+    background: #eee;
+    transition: 0.7s;
+}
+
+.test1_1 > span,
+.test1_2 > span,
+.test2_1 > span,
+.test2_2 > span {
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+/* content end */
