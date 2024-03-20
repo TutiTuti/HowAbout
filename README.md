@@ -2,21 +2,21 @@
 
 메인화면
 
-![131313.PNG](https://github.com/Team928/BID/raw/main/assets/131313.png)
+![131313.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/131313.png)
 
 회원가입 이메일 인증
 
-![333.PNG](/333.png)
+![333.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/333.png)
 
 인기코스검색
 
-![444.PNG](/444.png)
+![444.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/444.png)
 
 리뷰 및 가게정보 확인
 
-![222.PNG](/222.png)
+![222.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/222.png)
 
-![5555.PNG](/5555.png)
+![5555.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/5555.png)
 
 **요약**
 
