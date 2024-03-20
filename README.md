@@ -1,22 +1,5 @@
 # 식당 카페 코스 연계 서비스
 
-메인화면
-
-![131313.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/131313.png)
-
-회원가입 이메일 인증
-
-![333.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/333.png)
-
-인기코스검색
-
-![444.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/444.png)
-
-리뷰 및 가게정보 확인
-
-![222.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/222.png)
-
-![5555.PNG](https://github.com/TutiTuti/HowAbout/blob/main/assets/5555.png)
 
 **요약**
 
@@ -36,3 +19,40 @@ JWT을 이용한 로그인 방식 구현, JavaMailSender를 이용한 본인인�
 **시기**
 
 - 프로젝트 진행 기간 (ex. 2022.7 ~ 2023.11`) .
+
+**서비스 화면**
+
+<table style="border: 2px; text-align:center;">
+  <tr style="text-align:center;">
+    <td> 메인화면 </td>
+    <td> 회원가입&이메일인증 </td>
+    <td> 인기코스검색 </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./assets/131313.png" alt="메인화면" width="200px" />
+    </td>
+    <td>
+      <img src="./assets/333.png" alt="회원가입&이메일인증" width="200px" />
+    </td>
+    <td> 
+      <img src="./assets/444.png" alt="인기코스검색" width="205px" />
+    </td>
+  </tr>
+</table>
+
+<table style="border: 2px; text-align:center;">
+  <tr style="text-align:center;">
+    <td> 리뷰 </td>
+    <td> 가게정보 </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./assets/222.png" alt="리뷰" width="200px" />
+    </td>
+    <td>
+      <img src="./assets/5555.png" alt="가게정보" width="200px" />
+    </td>
+
+  </tr>
+</table>
