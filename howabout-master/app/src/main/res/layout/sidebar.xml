@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#99F3C5C5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="사용자 이름"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edge_black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_homebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff5757"
+                android:text="홈" />
+
+            <Button
+                android:id="@+id/btn_courcebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff5757"
+                android:gravity="center"
+                android:text="코스 찾기" />
+
+            <Button
+                android:id="@+id/btn_mypagebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff5757"
+                android:gravity="center"
+                android:text="마이페이지" />
+
+            <Button
+                android:id="@+id/btn_mycourcebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff5757"
+                android:gravity="center"
+                android:text="내 코스" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
